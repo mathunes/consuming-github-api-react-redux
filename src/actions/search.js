@@ -1,9 +1,9 @@
 import api from '../services/api.js';
 
 export function searchUser(text) {
-    return dispatch => {
+    return (dispatch, getState) => {
         dispatch(searchUserStarted());
-
+        
         api.get(`/${text}`)
         .then(response => {
             dispatch(searchUserSuccess(response.data));

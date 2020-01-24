@@ -6,7 +6,7 @@ export default class Header extends Component {
             <header>
                 <form>
                     <input type="text" placeholder="Pesquisar..." />
-                    <input type="submit" />
+                    <input type="submit" value="Buscar"/>
                 </form>
             </header>
         )

@@ -8,10 +8,6 @@ class Header extends Component {
         user: ''
     }
 
-    componentDidMount() {
-        console.log(this.props);
-    }
-
     searchUser = (e) => {
         e.preventDefault();
 

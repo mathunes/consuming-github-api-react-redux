@@ -1,7 +1,9 @@
 export default function searchUser(state = [], action) {
     switch (action.type) {
         case 'SEARCH_USER':
-            return [];
+            return {
+                userData: action.userData
+            };
         default:
             return state;
     }

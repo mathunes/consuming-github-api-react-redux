@@ -1,3 +1,7 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers(() => {});
+import searchUser from './searchUser.js';
+
+export default combineReducers({
+    searchUser,
+});

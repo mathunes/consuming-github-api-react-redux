@@ -34,7 +34,7 @@ class Main extends Component {
                                     <li key={repositorie.id}>
                                         <h3>{repositorie.name}</h3>
                                         <h4>{repositorie.description}</h4>
-                                        <a href={repositorie.html_url} target="_blank">{repositorie.html_url}</a>
+                                        <a href={repositorie.html_url} target="_Blank">{repositorie.html_url}</a>
                                         <p>Linguagem: {repositorie.language}</p>
                                     </li>
                                 )

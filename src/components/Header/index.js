@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import * as searchActions from '../../actions/search.js';
 import { connect } from 'react-redux';
+import './style.css';
 
 class Header extends Component {
     state = {

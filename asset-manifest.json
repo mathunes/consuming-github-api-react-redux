@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/consuming-github-api-react-redux/static/css/main.24074f60.chunk.css",
+    "main.js": "/consuming-github-api-react-redux/static/js/main.d7a511fd.chunk.js",
+    "main.js.map": "/consuming-github-api-react-redux/static/js/main.d7a511fd.chunk.js.map",
+    "runtime-main.js": "/consuming-github-api-react-redux/static/js/runtime-main.96f08584.js",
+    "runtime-main.js.map": "/consuming-github-api-react-redux/static/js/runtime-main.96f08584.js.map",
+    "static/js/2.e746512e.chunk.js": "/consuming-github-api-react-redux/static/js/2.e746512e.chunk.js",
+    "static/js/2.e746512e.chunk.js.map": "/consuming-github-api-react-redux/static/js/2.e746512e.chunk.js.map",
+    "index.html": "/consuming-github-api-react-redux/index.html",
+    "precache-manifest.727353dcc93ddac7958fdba0c0077c92.js": "/consuming-github-api-react-redux/precache-manifest.727353dcc93ddac7958fdba0c0077c92.js",
+    "service-worker.js": "/consuming-github-api-react-redux/service-worker.js",
+    "static/css/main.24074f60.chunk.css.map": "/consuming-github-api-react-redux/static/css/main.24074f60.chunk.css.map",
+    "static/js/2.e746512e.chunk.js.LICENSE": "/consuming-github-api-react-redux/static/js/2.e746512e.chunk.js.LICENSE",
+    "static/media/github.svg": "/consuming-github-api-react-redux/static/media/github.f7b319ad.svg",
+    "static/media/loading.gif": "/consuming-github-api-react-redux/static/media/loading.4c29a07a.gif",
+    "static/media/search.svg": "/consuming-github-api-react-redux/static/media/search.bf212733.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96f08584.js",
+    "static/js/2.e746512e.chunk.js",
+    "static/css/main.24074f60.chunk.css",
+    "static/js/main.d7a511fd.chunk.js"
+  ]
+}

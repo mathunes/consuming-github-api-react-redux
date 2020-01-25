@@ -4,6 +4,7 @@ import * as searchActions from '../../actions/search.js';
 import { connect } from 'react-redux';
 import './style.css';
 import logoGithub from '../../assets/images/github.svg';
+import iconSearch from '../../assets/images/search.svg';
 
 class Header extends Component {
     state = {
@@ -25,7 +26,9 @@ class Header extends Component {
                 </div>
                 <form onSubmit={this.searchUser}>
                     <input type="text" placeholder="Pesquisar..." onChange={(e) => {this.setState({user: e.target.value})}}/>
-                    <input type="submit" value="Buscar"/>
+                    <button type="submit">
+                        <img src={iconSearch} alt="Buscar" />
+                    </button>
                 </form>
             </header>
         )

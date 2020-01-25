@@ -32,9 +32,38 @@ header form input[type = "text"] {
     padding: 5px;
     font-size: 14px;
     font-weight: 400;
+    color: #f3eaea;
+    width: 200px;
+    transition: all .2s;
+}
+
+header form input[type = "text"]:focus {
+    background-color: #f3eaea;
+    color: #404448;
+    width: 300px;
+}
+
+header form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 header form input[type = "text"]::placeholder {
     color: #86898B;
     font-weight: 600;
+}
+
+header form button {
+    background-color: transparent;
+    border: 0;
+}
+
+header form button img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+header form button img:hover {
+    cursor: pointer;
 }

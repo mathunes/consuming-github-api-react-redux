@@ -14,6 +14,18 @@ main .message-main {
     margin-top: calc(50vh - 75px);
 }
 
+main .container-loading {
+    width: 100%;
+    height: calc(100vh - 145px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container-loading .loading {
+    width: 70px;
+}
+
 @media (max-width: 650px) {
     main .message-main {
         margin-top: calc(50vh - 128px);
@@ -21,10 +33,10 @@ main .message-main {
     }
 }
 
-main .container .personal-data {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 600px) {
+    main .container {
+        flex-direction: column;
+    }
 }
 
 main .container .personal-data img {
@@ -72,4 +84,8 @@ main .container .repositorie-data, ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+    
 }

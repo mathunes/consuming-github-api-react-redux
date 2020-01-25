@@ -52,7 +52,9 @@ class Main extends Component {
             }
 
         } else {
-            container = <img src={loadingGif} alt="Carregando"/>
+            container = <div className="container-loading">
+                            <img src={loadingGif} alt="Carregando" className="loading"/>
+                        </div>
         }
         
         return (

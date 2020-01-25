@@ -20,7 +20,7 @@ class Main extends Component {
 
         if (!this.props.user.loading) { //Verificando se é necessário ativar o gif de carregamento
             if (this.props.user.found) { //Veruficando se o usuário foi encontrado
-                console.log(this.props.user);
+                
                 let {avatar_url, name, login, followers, following, location, dataRepos:repositories } = this.props.user.userData;
                 container = 
                     <div className="container">
@@ -52,7 +52,7 @@ class Main extends Component {
             }
 
         } else {
-            container = <img src={loadingGif} alt="Carregando" />
+            container = <img src={loadingGif} alt="Carregando"/>
         }
         
         return (

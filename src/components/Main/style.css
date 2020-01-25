@@ -24,7 +24,7 @@ main .message-main {
 main .container .personal-data {
     display: flex;
     flex-direction: column;
-    aling-items: center;
+    align-items: center;
 }
 
 main .container .personal-data img {
@@ -63,6 +63,13 @@ main .container .personal-data .follow * {
     font-size: 14px;
 }
 
-main .container .repositorie-date ul, li {
+main .container .repositorie-data ul, li {
     list-style-type: none;
+}
+
+main .container .repositorie-data, ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

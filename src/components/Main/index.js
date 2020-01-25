@@ -14,24 +14,32 @@ class Main extends Component {
     
     render() {
 
-        let containerShow;
+        let container;
 
         if (!this.props.user.loading) {
-            let {avatar_url, name, login } = this.props.user.userData;
-            containerShow = 
-                <div>
-                    <img src={avatar_url} alt="Avatar" />
-                    <p>{name}</p>
-                    <p>{login}</p>
-                </div>
+            if (this.props.user.found) {
+                
+                let {avatar_url, name, login } = this.props.user.userData;
+                container = 
+                    <div>
+                        <img src={avatar_url} alt="Avatar" />
+                        <p>{name}</p>
+                        <p>{login}</p>
+                    </div>
+
+            } else {
+                (this.props.user.error) ? container = <p>Usúario não encontrado</p> : container = <p>Busque um usuário</p>
+            }
+
+            
             
             
         } else {
-            containerShow = <img src={loadingGif} alt="Carregando" />
+            container = <img src={loadingGif} alt="Carregando" />
         }
         
         return (
-            <div>{containerShow}</div>
+            <div>{container}</div>
         )
 
     }    

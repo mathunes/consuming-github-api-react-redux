@@ -21,10 +21,17 @@ main .message-main {
     }
 }
 
+main .container .personal-data {
+    display: flex;
+    flex-direction: column;
+    aling-items: center;
+}
+
 main .container .personal-data img {
     width: 20vw;
     min-width: 150px;
     border-radius: 5px;
+    margin: 0 auto;
 }
 
 @media (max-width: 950px) {
@@ -54,4 +61,8 @@ main .container .personal-data .follow {
 
 main .container .personal-data .follow * {
     font-size: 14px;
+}
+
+main .container .repositorie-date ul, li {
+    list-style-type: none;
 }

@@ -43,7 +43,7 @@ header form input[type = "text"] {
     background-color: #404448;
     border: 0;
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 10px;
     font-size: 14px;
     font-weight: 400;
     color: #f3eaea;

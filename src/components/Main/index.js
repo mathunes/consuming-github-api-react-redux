@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import loadingGif from '../../assets/images/loading.gif';
 
 class Main extends Component {
     constructor(props) {
@@ -17,7 +18,6 @@ class Main extends Component {
 
         if (!this.props.user.loading) {
             let {avatar_url, name, login } = this.props.user.userData;
-            console.log(avatar_url);
             containerShow = 
                 <div>
                     <img src={avatar_url} alt="Avatar" />
@@ -27,7 +27,7 @@ class Main extends Component {
             
             
         } else {
-            containerShow = <p>Loading...</p>
+            containerShow = <img src={loadingGif} alt="Carregando" />
         }
         
         return (

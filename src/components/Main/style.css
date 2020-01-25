@@ -1,5 +1,11 @@
 main {
     width: 100%;
+    padding: 20px 40px;
+}
+
+main .container {
+    display: flex;
+    flex-direction: row;
 }
 
 main .message-main {
@@ -13,5 +19,39 @@ main .message-main {
         margin-top: calc(50vh - 128px);
         font-size: 18px;
     }
-    
+}
+
+main .container .personal-data img {
+    width: 20vw;
+    min-width: 150px;
+    border-radius: 5px;
+}
+
+@media (max-width: 950px) {
+    main .container .personal-data img {
+        width: 30vw;
+    }
+}
+
+main .container .personal-data * {
+    margin-bottom: 5px;
+}
+
+main .container .personal-data h2 {
+    font-weight: 500;
+}
+
+main .container .personal-data h3 {
+    font-weight: normal;
+}
+
+main .container .personal-data .follow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .container .personal-data .follow * {
+    font-size: 14px;
 }

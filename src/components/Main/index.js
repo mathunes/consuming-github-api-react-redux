@@ -22,25 +22,31 @@ class Main extends Component {
                 console.log(this.props.user);
                 let {avatar_url, name, login, followers, following, location, dataRepos:repositories } = this.props.user.userData;
                 container = 
-                    <div>
-                        <img src={avatar_url} alt="Avatar" />
-                        <h1>{name}</h1>
-                        <p>{login}</p>
-                        <p>Seguidores: {followers}</p>
-                        <p>Seguindo: {following}</p>
-                        <p>{location}</p>
-                        <ul>
-                            {repositories.map((repositorie) => {
-                                return (
-                                    <li key={repositorie.id}>
-                                        <h3>{repositorie.name}</h3>
-                                        <h4>{repositorie.description}</h4>
-                                        <a href={repositorie.html_url} target="_Blank">{repositorie.html_url}</a>
-                                        <p>Linguagem: {repositorie.language}</p>
-                                    </li>
-                                )
-                            })}
-                        </ul>
+                    <div className="container">
+                        <div className="personal-data">
+                            <img src={avatar_url} alt="Avatar" />
+                            <h2>{name}</h2>
+                            <h3><a href={login} target="_Blank">{login}</a></h3>
+                            <div className="follow">
+                                <p>Seguidores: {followers}</p>
+                                <p>Seguindo: {following}</p>
+                            </div>
+                            <p>{location}</p>
+                        </div>
+                        <div className="repositories-data">
+                            <ul>
+                                {repositories.map((repositorie) => {
+                                    return (
+                                        <li key={repositorie.id}>
+                                            <h3>{repositorie.name}</h3>
+                                            <h4>{repositorie.description}</h4>
+                                            <a href={repositorie.html_url} target="_Blank">{repositorie.html_url}</a>
+                                            <p>Linguagem: {repositorie.language}</p>
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        </div>
                     </div>
 
             } else {

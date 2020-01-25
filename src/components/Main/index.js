@@ -21,13 +21,13 @@ class Main extends Component {
         if (!this.props.user.loading) { //Verificando se é necessário ativar o gif de carregamento
             if (this.props.user.found) { //Veruficando se o usuário foi encontrado
                 
-                let {avatar_url, name, login, followers, following, location, dataRepos:repositories } = this.props.user.userData;
+                let {avatar_url, name, login, html_url, followers, following, location, dataRepos:repositories } = this.props.user.userData;
                 container = 
                     <div className="container">
                         <div className="personal-data">
                             <img src={avatar_url} alt="Avatar" />
                             <h2>{name}</h2>
-                            <h3><a href={login} target="_Blank">{login}</a></h3>
+                            <h3><a href={html_url} target="_Blank" rel="noopener noreferrer">{login}</a></h3>
                             <div className="follow">
                                 <p>Seguidores: {followers}</p>
                                 <p>Seguindo: {following}</p>

@@ -7,7 +7,7 @@ export default class RepositorieCard extends Component {
 
         return (
             <div className="repositorie-card">
-                <h3><a href={html_url} target="_Blank">{name}</a></h3>
+                <h3><a href={html_url} target="_Blank" rel="noopener noreferrer">{name}</a></h3>
                 <h4>{description}</h4>
                 <p>{language}</p>
             </div>

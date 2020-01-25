@@ -16,24 +16,21 @@ class Main extends Component {
 
         let container;
 
-        if (!this.props.user.loading) {
-            if (this.props.user.found) {
-                
+        if (!this.props.user.loading) { //Verificando se é necessário ativar o gif de carregamento
+            if (this.props.user.found) { //Veruficando se o usuário foi encontrado
+                console.log(this.props.user);
                 let {avatar_url, name, login } = this.props.user.userData;
                 container = 
                     <div>
                         <img src={avatar_url} alt="Avatar" />
-                        <p>{name}</p>
+                        <h1>{name}</h1>
                         <p>{login}</p>
                     </div>
 
             } else {
-                (this.props.user.error) ? container = <p>Usúario não encontrado</p> : container = <p>Busque um usuário</p>
+                (this.props.user.error) ? container = <p>Usúario não encontrado</p> : container = <p>Busque um usuário</p> //Verificando se houve erro
             }
 
-            
-            
-            
         } else {
             container = <img src={loadingGif} alt="Carregando" />
         }

@@ -24,3 +24,17 @@ header .title-container .title-header {
     color: #f3eaea;
     margin: 0;
 }
+
+header form input[type = "text"] {
+    background-color: #404448;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+header form input[type = "text"]::placeholder {
+    color: #86898B;
+    font-weight: 600;
+}

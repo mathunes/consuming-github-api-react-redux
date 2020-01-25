@@ -1,0 +1,11 @@
+.repositorie-card {
+    min-height: 160px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    max-width: 300px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }

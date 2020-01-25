@@ -5,6 +5,20 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    header * {
+        margin: 5px 0;
+        text-align: center;
+    }
 }
 
 header .title-container {

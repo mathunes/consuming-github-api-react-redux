@@ -19,17 +19,23 @@ class Main extends Component {
         if (!this.props.user.loading) { //Verificando se é necessário ativar o gif de carregamento
             if (this.props.user.found) { //Veruficando se o usuário foi encontrado
                 console.log(this.props.user);
-                let {avatar_url, name, login, dataRepos:repositories } = this.props.user.userData;
+                let {avatar_url, name, login, followers, following, location, dataRepos:repositories } = this.props.user.userData;
                 container = 
                     <div>
                         <img src={avatar_url} alt="Avatar" />
                         <h1>{name}</h1>
                         <p>{login}</p>
+                        <p>Seguidores: {followers}</p>
+                        <p>Seguindo: {following}</p>
+                        <p>{location}</p>
                         <ul>
                             {repositories.map((repositorie) => {
                                 return (
                                     <li key={repositorie.id}>
-                                        {repositorie.name}
+                                        <h3>{repositorie.name}</h3>
+                                        <h4>{repositorie.description}</h4>
+                                        <a href={repositorie.html_url} target="_blank">{repositorie.html_url}</a>
+                                        <p>Linguagem: {repositorie.language}</p>
                                     </li>
                                 )
                             })}

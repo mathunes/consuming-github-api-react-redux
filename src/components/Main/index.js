@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import loadingGif from '../../assets/images/loading.gif';
+import './style.css';
 
 class Main extends Component {
     constructor(props) {
@@ -43,7 +44,7 @@ class Main extends Component {
                     </div>
 
             } else {
-                (this.props.user.error) ? container = <p>Usúario não encontrado</p> : container = <p>Busque um usuário</p> //Verificando se houve erro
+                (this.props.user.error) ? container = <p className="message-main">Usuário não encontrado</p> : container = <p className="message-main">Busque um usuário</p> //Verificando se houve erro
             }
 
         } else {
@@ -51,7 +52,7 @@ class Main extends Component {
         }
         
         return (
-            <div>{container}</div>
+            <main>{container}</main>
         )
 
     }    

@@ -1,0 +1,17 @@
+main {
+    width: 100%;
+}
+
+main .message-main {
+    text-align: center;
+    font-size: 24px;
+    margin-top: calc(50vh - 75px);
+}
+
+@media (max-width: 650px) {
+    main .message-main {
+        margin-top: calc(50vh - 128px);
+        font-size: 18px;
+    }
+    
+}

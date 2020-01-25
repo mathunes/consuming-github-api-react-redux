@@ -25,7 +25,7 @@ class Header extends Component {
                     <h1 className="title-header">GitHub Usuários</h1>
                 </div>
                 <form onSubmit={this.searchUser}>
-                    <input type="text" placeholder="Pesquisar..." onChange={(e) => {this.setState({user: e.target.value})}}/>
+                    <input type="text" placeholder="Pesquisar..." onChange={(e) => {this.setState({user: e.target.value})}} name="user"/>
                     <button type="submit">
                         <img src={iconSearch} alt="Buscar" />
                     </button>

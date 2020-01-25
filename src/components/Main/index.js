@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import loadingGif from '../../assets/images/loading.gif';
 import './style.css';
+import RepositorieCard from '../RepositorieCard';
 
 class Main extends Component {
     constructor(props) {
@@ -38,10 +39,7 @@ class Main extends Component {
                                 {repositories.map((repositorie) => {
                                     return (
                                         <li key={repositorie.id}>
-                                            <h3>{repositorie.name}</h3>
-                                            <h4>{repositorie.description}</h4>
-                                            <a href={repositorie.html_url} target="_Blank">{repositorie.html_url}</a>
-                                            <p>Linguagem: {repositorie.language}</p>
+                                            <RepositorieCard repoData={repositorie} />
                                         </li>
                                     )
                                 })}

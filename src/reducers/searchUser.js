@@ -1,6 +1,6 @@
 const initialState = {
     loading: false,
-    user: {},
+    userData: {},
     error: null
 }
 
@@ -8,7 +8,7 @@ export default function searchUser(state = initialState, action) {
     switch (action.type) {
         case 'SEARCH_USER_STARTED':
             return {
-                userData: action.userData,
+                // userData: action.userData,
                 loading: true
             };
         case 'SEARCH_USER_SUCCESS':

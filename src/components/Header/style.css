@@ -1,4 +1,26 @@
 header {
     background-color: #24292E;
-    padding: 20px
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .title-container .logo {
+    width: 35px;
+    margin-right: 20px;
+}
+
+header .title-container .title-header {
+    font-size: 20px;
+    color: #f3eaea;
+    margin: 0;
 }
